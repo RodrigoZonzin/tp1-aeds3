@@ -19,6 +19,6 @@ Ponto* cria_ponto(int, int);
 void destroi_ponto(Ponto*); 
 Ponto** cria_vetor_de_pontos(int); 
 void imprime_vetor_de_pontos(Ponto **pts, int N); 
-
+void destroi_vetor_de_pontos(Ponto**, int);
 
 #endif

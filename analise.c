@@ -6,8 +6,15 @@
 //DADOS DOIS PONTOS (x1, y1) E (x2,y2),
 //SE x2<x1 E y2>y1 ENTÃO NÃO HÁ INTERSECÇÃO ENTRE AS RETAS 
 int proposicao1(Ponto **pts, int N){
-   int contador; 
+    int contador; 
 
+    for(int i =0; i<N;i++){
+        for(int j = i+1; j<N;j++){
+            if(pts[j]->y > pts[i]->y && pts[j]->x < pts[i]->x){
+                contador++; 
+            }
+        }
+    }
 
     return 1;
 }
@@ -19,8 +26,8 @@ int proposicao1(Ponto **pts, int N){
 int proposicao2(Ponto **pts, int N){
     int contador; 
 
-    for(int i=0; i<=N;i++){
-        if(pts[i]->y < pts[i+1]->y){
+    for(int i=0; i<N;i++){
+        if(pts[i]->y < pts[i+1]->y){ //SEG FAULT
             contador++; 
         }
     }
