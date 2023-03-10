@@ -27,18 +27,19 @@ int main(){
         pts[i] = cria_ponto(x,y); 
     }
 
+
+
+
     //CHAMADA DA FUNÇÃO QUE IRÁ ANALISAR OS RESULTADOS OBTIDOS
     //PARA O CONJUNTO DE DADOS 
     int resultado = proposicao1(pts, N); 
-
-    //IMPRIME A ÚNICA SAÍDA DO PROGRAMA, UM INTEIRO
-    //QUE CONTÉM O NÚMERO DE SEGMENTOS POSSÍVEIS
     printf("resultado da prop1 foi %d\n", resultado); 
     
     imprime_vetor_de_pontos(pts, N); //COMENTAR NA VERSAO FIANL
-
-    //LIBERA TODO O ESPAÇO ALOCADO DURANTE A EXECUÇÃO DO PRORGAMA
     destroi_vetor_de_pontos(pts, N);
     
+
+
+
     return 0; 
 }
