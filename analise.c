@@ -34,3 +34,9 @@ int proposicao2(Ponto **pts, int N){
 
     return contador; 
 }
+
+//ESSA FUNÇÃO CALCULA O COEFICIENTE ANGULAR ENTRE
+//DOIS PONTOS QUAISQUER 
+double coeficiente_angular(Ponto *p1, Ponto *p2){
+    return (p2->y - p1->y)/(p2->x - p1->x);
+}

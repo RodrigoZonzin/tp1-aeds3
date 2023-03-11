@@ -25,10 +25,12 @@ int main(){
     for(int i = 0; i<N; i++){
         scanf("%d %d", &x, &y); 
         pts[i] = cria_ponto(x,y); 
+        
     }
 
-
-
+    for(int i =0; i<N-1; i++){
+        printf("slope is %lf\n", coeficiente_angular(pts[i], pts[i+1]));
+    }
 
     //CHAMADA DA FUNÇÃO QUE IRÁ ANALISAR OS RESULTADOS OBTIDOS
     //PARA O CONJUNTO DE DADOS 
